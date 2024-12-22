@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">FoodieHub</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to FoodieHub</h1>
+    <p>Your favorite dishes, delivered fast and fresh!</p>
+    <button onclick="alert('Order Now Coming Soon!')">Order Now</button>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <h2>Our Featured Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/150" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>Delicious cheese pizza with fresh toppings.</p>
+        <button onclick="alert('Pizza added to cart!')">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/150" alt="Burger">
+        <h3>Burger</h3>
+        <p>Juicy burgers with crispy fries.</p>
+        <button onclick="alert('Burger added to cart!')">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/150" alt="Pasta">
+        <h3>Pasta</h3>
+        <p>Rich and creamy pasta for your cravings.</p>
+        <button onclick="alert('Pasta added to cart!')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

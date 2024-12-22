@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f0a500;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+  color: #fff;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #f0a500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #333;
+}
+
+/* Menu Section */
+.menu {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+}
+
+.menu-item button {
+  padding: 5px 10px;
+  background: #f0a500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background: #333;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.contact form button {
+  padding: 10px 20px;
+  background: #f0a500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background: #333;
+}
